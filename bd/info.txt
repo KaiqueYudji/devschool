@@ -1,0 +1,9 @@
+ let r = await 
+       db.tb_usuario.update({
+           nm_usuario:nome
+       }, {
+           where: { id_usuario: id } 
+       })
+
+       resp.sendStatus(200)
+   })
