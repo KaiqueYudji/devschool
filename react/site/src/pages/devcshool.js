@@ -14,8 +14,8 @@ export default function Dev(){
                 <div className="espaco-preto"></div>
                
                 <div className="ultparte-cab">
-                    <div className="ger"> Gerenciamento </div>
-                    <div className="alunos"> Alunos </div>    
+                    <div className="ger"> Gerenciamento <div className="seta"> <img src="/assets/images/Vector (4).png" alt=""/></div> </div>
+                    <div className="alunos"> <div className="barrinha"></div>Alunos </div>    
                  </div> 
 
             </div>
@@ -23,23 +23,30 @@ export default function Dev(){
 
             <div className="ladodireito">
                 <div className="cabecalho-ld">
-
+                  <div className="cima">
                     <div className="lado-usu">
-                        <div className="foto"><img src="/assets/images/Ellipse.png" alt=""/> <div className="bolinha"></div> <div className="name-usu"> Olá, Bruno Oliveira </div> </div>
+                        <div className="foto"><img src="/assets/images/Ellipse.png" alt=""/> <div className="bolinha">3</div> <div className="name-usu"> Olá, Bruno Oliveira </div> </div>
                     </div>
 
                     <div className="lado-botao">
-                        <div className="bot1"><img src="/assets/images/Vector (2).png" alt=""/></div>
-                        <div className="bot2"><img src="/assets/images/Vector (3).png" alt=""/></div>
+                        <div className="bot1"><button><img src="/assets/images/Vector (2).png" alt=""/></button></div>
+                        <div className="bot2"><button><img src="/assets/images/sair.svg" alt=""/></button></div>
                     </div>
+                  </div>
+                  <hr/>
+                 </div>
 
+                   <div className="conteudo-ld">
                     <div className="form">
-                        <div className="titulo-form">Novo Aluno</div>
+                        <div className="titulo-form">
+                            <div className="barrona"></div>
+                            <div className="texto">Novo Aluno</div>
+                        </div>
 
                         <div className="inputs">
                          <div className="container-f1">
 
-                            <div className="bloco">
+                            <div className="bloco1">
                                <label for="nome"> Nome: </label>
                                <input className="nome-b1" name="nome" type="text"/>
                             </div>
@@ -69,9 +76,111 @@ export default function Dev(){
                             </div> 
 
                     </div>
-                </div>
-            </div>
 
+                 <div className="tabela">
+                  <div className="titulo-tb">
+                            <div className="barrona"></div>
+                            <div className="texto">Alunos Matriculados </div>
+                        </div>
+                        <table class ="table-user">
+                    <thead>
+                        <tr>
+                            <th > ID </th>
+                            <th> Nome </th>
+                            <th> Chamada </th>
+                            <th> Turma </th>
+                            <th> Curso </th>
+                            <th class="a"> </th>
+                            <th class="a"> </th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        <tr >
+                            <td> 1 </td>
+                            <td> Fulao da Silva Sauro</td>
+                            <td> 15 </td>
+                            <td> InfoX </td>
+                            <td > Informática </td>
+                            <td class="aa"> <button> <img src="/assets/images/edit.svg" alt="" /> </button> </td>
+                            <td class = "aa">   <button> <img src="/assets/images/del.svg" alt="" /> </button> </td>
+                        </tr>
+
+                        
+                    
+
+                    
+                        <tr class="int">
+                            <td> 1 </td>
+                            <td> Fulao da Silva Sauro</td>
+                            <td> 16 </td>
+                            <td> InfoX </td>
+                            <td > Informática </td>
+                            <td>   </td>
+                            <td>   </td>
+                        </tr>
+
+                        
+                    
+
+                    
+                        <tr>
+                            <td> 1 </td>
+                            <td> Fulao da Silva Sauro</td>
+                            <td> 17 </td>
+                            <td> InfoX </td>
+                            <td > Informática </td>
+                            <td>   </td>
+                            <td>   </td>
+                        </tr>
+
+                        
+                    
+
+                    
+                        <tr class="int">
+                            <td> 1 </td>
+                            <td> Fulao da Silva Sauro</td>
+                            <td> 18 </td>
+                            <td> InfoX </td>
+                            <td > Informática </td>
+                            <td>   </td>
+                            <td>   </td>
+                        </tr>
+
+
+                        <tr>
+                            <td> 1 </td>
+                            <td> Fulao da Silva Sauro</td>
+                            <td> 17 </td>
+                            <td> InfoX </td>
+                            <td > Informática </td>
+                            <td>   </td>
+                            <td>   </td>
+                        </tr>
+
+
+                        <tr class="int">
+                            <td> 1 </td>
+                            <td> Fulao da Silva Sauro</td>
+                            <td> 18 </td>
+                            <td> InfoX </td>
+                            <td > Informática </td>
+                            <td>   </td>
+                            <td>   </td>
+                        </tr>
+
+
+                        
+                    </tbody> 
+
+                </table>
+          
+
+                </div>
+              </div>
+
+            </div>
 
 
 
