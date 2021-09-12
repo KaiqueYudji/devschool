@@ -9,6 +9,7 @@ body{
 .container{
     display:flex;
     flex-direction:row;
+    height:100%;
 }
 
 .ladoesquerdo{
@@ -18,6 +19,7 @@ body{
     color:white;
     width:19em;
     min-height: 100%;
+   
     
 }
 
@@ -407,4 +409,18 @@ img {
 }
 .aa{
     text-align: center;
+}
+
+
+.linha-alternada{
+    background-color: #FFF;
+}
+
+
+.aa button {
+    visibility: hidden;
+}
+
+tr:hover .aa > button{
+    visibility: visible;
 }
