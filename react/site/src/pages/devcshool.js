@@ -30,13 +30,36 @@ export default function Dev(){
    }
 
    async function inserir(){
-    
+
+    if(nome == '' || chamada == ''  || curso == '' || turma == '' )
+    return toast.error("os campos são obrigatórios")
+
     if(idalterando === 0){
+        if(chamada < 0 )
+        return toast.error('Número inválido')
+   
+        
+        if(isNaN(chamada)){
+          return  toast.error("O Campo Chamado só aceita números");
+        }
+        else{
         loading.current.continuousStart();
         let r = await api.Inserir(nome,chamada,curso,turma);
+        }
+
+
         toast.dark('💕 Aluno Inserido!')
         loading.current.complete();
      } else {
+        if(nome == '' || chamada == ''  || curso == '' || turma == '' )
+        return toast.error("os campos são obrigatórios")
+        
+        if(chamada < 0 )
+        return toast.error('Número inválido')
+
+        if(isNaN(chamada))
+            return  toast.error("O Campo Chamado só aceita números")
+
         loading.current.continuousStart();
         let r = await api.alterar(idalterando, nome, chamada, curso, turma)
         toast.dark('💕 Aluno Alterado!')
