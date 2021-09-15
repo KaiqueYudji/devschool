@@ -20,7 +20,9 @@ body{
     width:19em;
     min-height: 100%;
    
-    
+    position: sticky;
+    top: 0px;
+    height: 100vh;
 }
 
 
