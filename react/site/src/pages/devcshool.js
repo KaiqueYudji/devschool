@@ -142,7 +142,7 @@ export default function Dev(){
                     <div className="form">
                         <div className="titulo-form">
                             <div className="barrona"></div>
-                            <div className="texto"> {idalterando == 0 ?"Novo Aluno" :"Alterando aluno " + idalterando }</div>
+                            <div className="texto"> {idalterando === 0 ?"Novo Aluno" :"Alterando aluno " + idalterando }</div>
                         </div>
 
                         <div className="inputs">
@@ -173,7 +173,7 @@ export default function Dev(){
 
                         </div>
 
-                        <button onClick={inserir} className="cadastrar"> { idalterando == 0 ?"cadastrar" :"Alterar"}</button>
+                        <button onClick={inserir} className="cadastrar"> { idalterando === 0 ?"cadastrar" :"Alterar"}</button>
 
                             </div> 
 
@@ -202,7 +202,7 @@ export default function Dev(){
                         {alunos.map((item, i )=>
 
                         
-                        <tr className={i %2 == 0 ?"linha-alternada" :""} >
+                        <tr className={i %2 === 0 ?"linha-alternada" :""} >
                             <td> {item.id_matricula}</td>
                             <td title={item.nm_aluno}>
                              {item.nm_aluno!= null && item.nm_aluno.length >= 25
