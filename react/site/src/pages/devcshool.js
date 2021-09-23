@@ -45,7 +45,7 @@ export default function Dev(){
         if(r.erro){
             toast.error(r.erro)
         }else{
-            toast.dark('💕 Aluno Inserido!')
+            toast.dark('💕 Aluno alterado!')
         }
         
         loading.current.complete();
